@@ -8,18 +8,10 @@ import { link } from 'fs';
  function home ()  {
   return (
        <div>
-        <h1  className='text-cyan-200 text-2xl '><b>Home</b></h1>
-        <ul>
-<li className='text-cyan-200 py-3 m-30 text-2xl hover:underline' ><Link href="/about">About</Link></li>
-<li className='text-cyan-200 py-3  text-2xl  hover:underline'><Link href="/contact">Contact</Link></li>
-<li className='text-cyan-200 py-3 text-2xl  hover:underline '><Link href="/services">Services</Link></li>
-        </ul>
-       </div>
-        
+<p className='  bg-gradient-to-r from-purple-500 text-slate-950 text-center py-72 text-4xl'><b>THIS IS HOME PAGE </b></p>
+       </div>     
   )
  } 
- 
- 
  export default home;
 
 

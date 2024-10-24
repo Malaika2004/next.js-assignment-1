@@ -1,24 +1,16 @@
 import Link from 'next/link';
 
-function Navbar() {
+const navbar = () => {
   return (
-    <nav className="navbar">
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
-          <Link href="/contact">Contact</Link>
-        </li>
-        <li>
-            <link  href="/services">Services</link>
-        </li>
-      </ul>
-    </nav>
-  );
+<div className='h-16   bg-gradient-to-r from-violet-500 to-fuchsia-500  text-slate-900 flex justify-between items-center' >
+<h1 className='text-2xl m-4 cursor-pointer    '>MY-web</h1> 
+<ul className='flex gap-3 m-4 cursor-pointer'>
+<li className='hover:text-orange-300'><Link href="/home">Home</Link></li>
+ <li className=' hover:text-orange-300' ><Link href="/about ">About</Link></li>
+ <li className=' hover:text-orange-300'>  <Link href="/contact">Contact</Link></li>
+<li className=' hover:text-orange-300'>  <Link href="/services">Services</Link></li>
+        </ul>
+    </div>
+  )
 }
-
-export default Navbar;
+export default navbar;

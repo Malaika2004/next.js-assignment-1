@@ -30,7 +30,7 @@ export default function RootLayout({
         className={` bg-slate-900`}
         
       >
-     
+     <Navbar/>
         {children}
       </body>
     </html>
